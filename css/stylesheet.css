@@ -202,6 +202,73 @@ html, body {
     font-size: 15px;
 }
 
+.timeline {
+    background-color: #111; /* Hitam pekat */
+    border-left: 4px solid aqua;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.timeline:hover {
+    transform: scale(1.02);
+}
+
+.timeline__block {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline__bullet {
+    width: 14px;
+    height: 14px;
+    background-color: aqua;
+    border: 3px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: -24px;
+    top: 10px;
+    z-index: 2;
+}
+
+.timeline__header {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.timeline__title {
+    color: aqua;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.timeline__meta {
+    color: #ccc;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.timeline__timeframe {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.timeline__desc {
+    background-color: #222; /* Hitam lembut */
+    border-left: 3px solid aqua;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #ddd;
+}
+
+.column {
+    margin: 10px;
+}
+
 /********************/
 /* PROJECT SECTION */
 /******************/
