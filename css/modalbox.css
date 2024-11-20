@@ -1,44 +1,89 @@
 .modal-content {
-    background-color: black;
+    background-color: #222;
     border: 1px solid aqua;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(45deg, aqua, #000);
+    color: white;
+    border-bottom: 1px solid aqua;
+    padding: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .modal-title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px aqua;
+}
+
+.btn-close-white {
+    background-color: aqua;
+    border: none;
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
+}
+
+.modal-body {
+    padding: 15px;
     color: white;
+    font-size: 0.9rem;
 }
 
 .education-item {
-    border-left: 3px solid aqua;
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-
-.education-item h5 {
-    color: white;
-}
-
-.education-year {
-    color: aqua;
-    font-weight: bold;
-}
-
-.certificate-card {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 255, 255, 0.08);
+    padding: 10px;
     border: 1px solid aqua;
-    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.certificate-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px aqua;
+.education-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.3);
 }
 
-.certificate-image {
-    max-height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+.card.certificate-card {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid aqua;
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease;
+}
+
+.card.certificate-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.5);
 }
 
 .card-title {
-  color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: aqua;
+}
+
+.modal-footer {
+    background-color: #000;
+    border-top: 1px solid aqua;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.btn-outline-aqua {
+    color: aqua;
+    font-size: 0.9rem;
+    border: 1px solid aqua;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-aqua:hover {
+    background-color: aqua;
+    color: #000;
 }
